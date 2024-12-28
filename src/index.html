@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayam Betutu</title>
     <link rel="stylesheet" href="css/output.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100">
 <!-- Navbar -->
 <nav class="bg-gradient-to-r from-black via-gray-800 to-black text-white font-bold font-Poppins shadow-lg z-10 sticky top-0 w-full">
   <div class="container mx-auto flex items-center justify-between px-4 py-3">
 <!-- Logo -->
-<div class="text-2xl font-extrabold">
-<img src="img/logo.png" class="w-20 rounded-full" alt="">
+<div class="flex items-center space-x-4 text-2xl font-extrabold">
+  <img src="img/logo.png" class="w-20 h-20 rounded-full" alt="Logo">
+  <h3 class="text-red-500">Walawe</h3>
 </div>
-
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex space-x-8">
@@ -46,38 +47,45 @@
 
 <!-- Hero Section -->
 <section class="bg-red-500 text-white font-Poppins py-20" id="home">
-    <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 px-6">
-      <!-- Text Content -->
-      <div class="flex-1 text-center md:text-left space-y-6">
-        <h1 class="text-4xl font-extrabold leading-snug">
-          Rasakan Keaslian <span class="text-yellow-300">Ayam Betutu Bali</span> 
-        </h1>
-        <p class="text-lg">
-          Memperkenalkan cita rasa tradisional Bali yang autentik dan terjangkau, sempurna untuk dinikmati oleh semua kalangan, terutama generasi muda.
-        </p>
-        <button class="bg-yellow-300 text-black font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-400 transition">
-          <a class="scroll-link" href="#product">Order Now</a>
-        </button>
-      </div>
-  
-      <!-- Image -->
-      <div class="flex-1">
-        <img class="w-full max-w-sm mx-auto rounded-lg shadow-lg"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        src="img/hero.jpeg" alt="Ayam Betutu Bali">
-      </div>
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-12 px-6">
+    <!-- Text Content -->
+    <div class="flex-1 text-center md:text-left space-y-6">
+      <h1 class="text-4xl font-extrabold leading-snug">
+        Rasakan Keaslian <span class="text-yellow-300">Ayam Betutu Bali</span>
+      </h1>
+      <p class="text-lg">
+        Memperkenalkan cita rasa tradisional Bali yang autentik dan terjangkau, sempurna untuk dinikmati oleh semua kalangan, terutama generasi muda.
+      </p>
+      <a 
+        href="#product" 
+        class="inline-block bg-yellow-300 text-black font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-400 transition duration-300">
+        Order Now
+      </a>
     </div>
-  </section>
+
+    <!-- Image Section -->
+    <div class="flex-1 flex flex-wrap flex-col md:flex-row items-center justify-center gap-6">
+
+      <img 
+      class="w-full h-full max-w-sm rounded-lg" 
+      data-aos="fade-up" 
+      data-aos-offset="300" 
+      data-aos-easing="ease-in-sine" 
+      src="img/hero.png" 
+      alt="Ayam Betutu Bali"
+    >
+      
+    </div>    
+  </div>
+</section>
 
 <!-- Product Card Section -->
-<section class="bg-gray-100 py-20 font-Poppins" id="product">
-  <div class="container mx-auto px-6">
+<section class="bg-gray-100 font-Poppins mt-5 flex items-center justify-center" id="product">
+  <div class="text-center">
     <!-- Section Title -->
-    <div class="text-center mb-12">
+    <div class="mb-8">
       <h2 
-        class="text-3xl sm:text-4xl font-extrabold text-gray-800 leading-tight" 
+        class="text-2xl sm:text-3xl font-extrabold text-gray-800 leading-tight" 
         data-aos="fade-down" 
         data-aos-offset="200" 
         data-aos-duration="600"
@@ -85,7 +93,7 @@
         Menu <span class="text-red-500">Kami</span>
       </h2>
       <p 
-        class="text-gray-600 text-lg mt-4" 
+        class="text-gray-600 text-base mt-2" 
         data-aos="fade-up" 
         data-aos-offset="200" 
         data-aos-duration="600"
@@ -95,66 +103,70 @@
     </div>
 
 <!-- Product Cards -->
-<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10 lg:gap-14">
+<div class="flex flex-wrap justify-center mb-5 gap-6">
   <!-- Card Menu 1 -->
-  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition duration-300">
-    <img 
-      src="img/ayam betutu.jpg" 
-      alt="Ayam Betutu" 
-      class="w-full h-64 object-cover" 
-      data-aos="zoom-in" 
-      data-aos-offset="200" 
-      data-aos-duration="600"
-    >
-    <div class="p-6 text-center">
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">Ayam Betutu</h3>
-      <p class="text-gray-600 text-sm mb-4">
-        Ayam Betutu khas Bali yang kaya rempah, dimasak dengan bumbu tradisional yang meresap hingga ke tulang. Cocok untuk setiap kesempatan.
-      </p>
-      <p class="text-red-500 text-xl font-bold mb-6">Rp 15.000</p>
-      <a 
-        href="https://wa.me/6285338190915?text=Hallo%20min%20saya%20pesan%20ayam%20betutu%20originalnya%20%F0%9F%91%8B" 
-        class="bg-red-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-red-600 transition duration-300"
+  <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl transform hover:scale-105 transition duration-300 max-w-xs">
+    <div class="relative z-10">
+      <img 
+        src="img/ayam betutu1.jpg" 
+        alt="Ayam Betutu" 
+        class="w-full h-40 object-cover rounded-t-lg" 
+        data-aos="zoom-in" 
+        data-aos-offset="200" 
+        data-aos-duration="600"
       >
-        Pesan Sekarang
-      </a>
+      <div class="p-4 text-center">
+        <h3 class="text-lg font-bold text-gray-800 mb-2">Ayam Betutu</h3>
+        <p class="text-gray-600 text-sm mb-2">
+          Ayam Betutu khas Bali yang kaya rempah, dimasak dengan bumbu tradisional yang meresap hingga ke tulang.
+        </p>
+        <p class="text-red-500 text-lg font-bold mb-4">Rp 15.000</p>
+        <a 
+          href="https://wa.me/6285338190915?text=Hallo%20min%20saya%20pesan%20ayam%20betutu%20originalnya%20%F0%9F%91%8B" 
+          class="bg-gradient-to-r from-red-500 to-yellow-500 text-white py-2 px-6 rounded-full shadow-md hover:from-yellow-500 hover:to-red-500 transition duration-300 text-sm"
+        >
+          Pesan Sekarang
+        </a>
+      </div>
     </div>
   </div>
 
-<!-- Card Menu 2 -->
-<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition duration-300">
-  <img 
-    src="img/ayam_betutu_frozen.jpg" 
-    alt="Ayam Betutu Frozen Food" 
-    class="w-full h-64 object-cover" 
-    data-aos="zoom-in" 
-    data-aos-offset="200" 
-    data-aos-duration="600"
-  >
-  <div class="p-6 text-center">
-    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ayam Betutu Frozen Food</h3>
-    <p class="text-gray-600 text-sm mb-4">
-      Nikmati kelezatan Ayam Betutu khas Bali dalam bentuk Frozen Food. Praktis untuk disimpan dan disajikan kapan saja, dengan cita rasa rempah tradisional yang terjaga.
-    </p>
-    <p class="text-gray-400 text-xl font-bold mb-6">Coming Soon</p>
-    <a 
-      href="#" 
-      class="bg-gray-300 text-gray-500 py-2 px-6 rounded-full shadow-lg cursor-not-allowed"
-    >
-      Coming Soon
-    </a>
+  <!-- Card Menu 2 -->
+  <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl transform hover:scale-105 transition duration-300 max-w-xs relative">
+    <!-- Overlay for Coming Soon -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 hover:opacity-100 transition duration-300">
+      <span class="text-white text-2xl font-bold">Coming Soon</span>
+    </div>
+    
+    <div class="relative z-10">
+      <img 
+        src="img/soon.png" 
+        alt="Ayam Betutu Frozen Food" 
+        class="w-full h-40 object-cover rounded-t-lg" 
+        data-aos="zoom-in" 
+        data-aos-offset="200" 
+        data-aos-duration="600"
+      >
+      <div class="p-4 text-center">
+        <h3 class="text-lg font-bold text-gray-800 mb-2">Ayam Betutu Frozen Food</h3>
+        <p class="text-gray-600 text-sm mb-2">
+          Nikmati Ayam Betutu Bali dalam bentuk frozen food, siap disiapkan di rumah dengan rasa yang sama lezatnya.
+        </p>
+        <p class="text-red-500 text-lg font-bold mb-4">Rp 25.000</p>
+        <!-- Disabled button for Coming Soon -->
+        <button class="bg-gray-300 text-white py-2 px-6 rounded-full shadow-md cursor-not-allowed" disabled>
+          Coming Soon
+        </button>
+      </div>
+    </div>
   </div>
+  
+  
 </div>
-
-</div>
-
-  </div>
-</section>
-
 
 
 <!-- Why Choose Us Section -->
-<section class="bg-gradient-to-b from-gray-100 to-gray-200 py-16 font-Poppins" id="tentang">
+<section class="bg-red-500 py-16 font-Poppins" id="tentang">
   <div class="container mx-auto px-6">
     <!-- Judul Section -->
     <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-12 tracking-wide">
@@ -298,7 +310,7 @@
 
 
 <!-- Kotak Saran dan Kritik Section -->
-<section class="bg-gray-100 py-12 font-Poppins" id="contact">
+<section class="bg-red-500  py-12 font-Poppins" id="contact">
     <div class="container mx-auto px-4 py-12">
       <!-- Judul Section -->
       <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
@@ -375,7 +387,7 @@
           <div class="flex justify-center space-x-4 mt-2">
               <a href="#" class="hover:text-red-400 transition"><img src="img/icon/fb.png" alt="Facebook" class="h-6"></a>
               <a href="#" class="hover:text-red-400 transition"><img src="img/icon/ig.png" alt="Instagram" class="h-6"></a>
-              <a href="#" class="hover:text-red-400 transition"><img src="img/icon/ig.png" alt="Shopee" class="h-6"></a>
+              <a href="#" class="hover:text-red-400 transition"><img src="img/icon/shopee.png" alt="Shopee" class="h-6"></a>
               <a href="#" class="hover:text-red-400 transition"><img src="img/icon/wa.png" alt="Twitter" class="h-6"></a>
           </div>
       </div>
