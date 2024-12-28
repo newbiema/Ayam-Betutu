@@ -13,17 +13,7 @@
   <div class="container mx-auto flex items-center justify-between px-4 py-3">
 <!-- Logo -->
 <div class="text-2xl font-extrabold">
-  <a 
-    href="#" 
-    class="relative text-gray-800 hover:text-red-400 transition duration-300 ease-in-out"
-  >
-    Ayam Betutu 
-    <span class="text-red-500">Walawe</span>
-    <!-- Garis bawah animasi -->
-    <span 
-      class="absolute left-0 bottom-0 w-0 h-1 bg-red-400 transition-all duration-500 ease-in-out hover:w-full"
-    ></span>
-  </a>
+<img src="img/logo.png" class="w-20 rounded-full" alt="">
 </div>
 
 
@@ -84,42 +74,83 @@
 <!-- Product Card Section -->
 <section class="bg-gray-100 py-20 font-Poppins" id="product">
   <div class="container mx-auto px-6">
-    <!-- Judul Section -->
+    <!-- Section Title -->
     <div class="text-center mb-12">
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 leading-tight" data-aos="fade-down" data-aos-offset="200" data-aos-duration="600">
+      <h2 
+        class="text-3xl sm:text-4xl font-extrabold text-gray-800 leading-tight" 
+        data-aos="fade-down" 
+        data-aos-offset="200" 
+        data-aos-duration="600"
+      >
         Menu <span class="text-red-500">Kami</span>
       </h2>
-      <p class="text-gray-600 text-lg mt-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="600">
+      <p 
+        class="text-gray-600 text-lg mt-4" 
+        data-aos="fade-up" 
+        data-aos-offset="200" 
+        data-aos-duration="600"
+      >
         Jelajahi beragam pilihan menu lezat kami, dibuat dengan cinta untuk memanjakan selera Anda!
       </p>
     </div>
 
-    <!-- Card Menu -->
-    <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition duration-300">
-      <img 
-        src="img/ayam betutu.jpg" 
-        alt="Ayam Betutu" 
-        class="w-full h-64 object-cover"
-        data-aos="zoom-in"
-        data-aos-offset="200"
-        data-aos-duration="600"
+<!-- Product Cards -->
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10 lg:gap-14">
+  <!-- Card Menu 1 -->
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition duration-300">
+    <img 
+      src="img/ayam betutu.jpg" 
+      alt="Ayam Betutu" 
+      class="w-full h-64 object-cover" 
+      data-aos="zoom-in" 
+      data-aos-offset="200" 
+      data-aos-duration="600"
+    >
+    <div class="p-6 text-center">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Ayam Betutu</h3>
+      <p class="text-gray-600 text-sm mb-4">
+        Ayam Betutu khas Bali yang kaya rempah, dimasak dengan bumbu tradisional yang meresap hingga ke tulang. Cocok untuk setiap kesempatan.
+      </p>
+      <p class="text-red-500 text-xl font-bold mb-6">Rp 15.000</p>
+      <a 
+        href="https://wa.me/6285338190915?text=Hallo%20min%20saya%20pesan%20ayam%20betutu%20originalnya%20%F0%9F%91%8B" 
+        class="bg-red-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-red-600 transition duration-300"
       >
-      <div class="p-6 text-center">
-        <h3 class="text-2xl font-bold text-gray-800 mb-4">Ayam Betutu</h3>
-        <p class="text-gray-600 text-sm mb-4">
-          Ayam Betutu khas Bali yang kaya rempah, dimasak dengan bumbu tradisional yang meresap hingga ke tulang. Cocok untuk setiap kesempatan.
-        </p>
-        <p class="text-red-500 text-xl font-bold mb-6">Rp 15.000</p>
-        <a 
-          href="https://wa.me/6285338190915?text=Hallo%20min%20saya%20pesan%20ayam%20betutu%20originalnya%20%F0%9F%91%8B"
-          class="bg-red-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-red-600 transition duration-300"
-        >
-          Pesan Sekarang
-        </a>
-      </div>
+        Pesan Sekarang
+      </a>
     </div>
   </div>
+
+<!-- Card Menu 2 -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition duration-300">
+  <img 
+    src="img/ayam_betutu_frozen.jpg" 
+    alt="Ayam Betutu Frozen Food" 
+    class="w-full h-64 object-cover" 
+    data-aos="zoom-in" 
+    data-aos-offset="200" 
+    data-aos-duration="600"
+  >
+  <div class="p-6 text-center">
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ayam Betutu Frozen Food</h3>
+    <p class="text-gray-600 text-sm mb-4">
+      Nikmati kelezatan Ayam Betutu khas Bali dalam bentuk Frozen Food. Praktis untuk disimpan dan disajikan kapan saja, dengan cita rasa rempah tradisional yang terjaga.
+    </p>
+    <p class="text-gray-400 text-xl font-bold mb-6">Coming Soon</p>
+    <a 
+      href="#" 
+      class="bg-gray-300 text-gray-500 py-2 px-6 rounded-full shadow-lg cursor-not-allowed"
+    >
+      Coming Soon
+    </a>
+  </div>
+</div>
+
+</div>
+
+  </div>
 </section>
+
 
 
 <!-- Why Choose Us Section -->
@@ -224,7 +255,7 @@
       <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transition transform">
         <div class="flex items-center mb-4">
           <img 
-            src="img/cwo.jpeg" 
+            src="img/cwo.jpeg"
             alt="Avatar Pelanggan" 
             class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-red-500"
           >
@@ -344,6 +375,7 @@
           <div class="flex justify-center space-x-4 mt-2">
               <a href="#" class="hover:text-red-400 transition"><img src="img/icon/fb.png" alt="Facebook" class="h-6"></a>
               <a href="#" class="hover:text-red-400 transition"><img src="img/icon/ig.png" alt="Instagram" class="h-6"></a>
+              <a href="#" class="hover:text-red-400 transition"><img src="img/icon/ig.png" alt="Shopee" class="h-6"></a>
               <a href="#" class="hover:text-red-400 transition"><img src="img/icon/wa.png" alt="Twitter" class="h-6"></a>
           </div>
       </div>
